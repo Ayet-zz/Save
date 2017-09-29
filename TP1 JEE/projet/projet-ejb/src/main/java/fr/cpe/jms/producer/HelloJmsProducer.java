@@ -1,0 +1,25 @@
+package fr.cpe.jms.producer;
+
+import java.util.Queue;
+
+import javax.annotation.Resource;
+import javax.ejb.Stateless;
+import javax.inject.Inject;
+
+@Stateless
+
+public class HelloJmsProducer implements IHelloJmsProducer{
+	
+	@Resource(name="java:/projet-hello")
+	private Queue queue;
+	
+	@Inject
+	private JMSContext context;
+	
+	@Override
+	public String sayHello(String name)
+	{
+		context.createProducer().send(queue,name);
+		return null;
+	}
+}

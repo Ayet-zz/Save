@@ -1,0 +1,7 @@
+package fr.cpe;
+import javax.ejb.Stateless;
+
+@Stateless
+public class Hello2 implements Hello{
+	public String sayHello(){return "Hello";}
+}

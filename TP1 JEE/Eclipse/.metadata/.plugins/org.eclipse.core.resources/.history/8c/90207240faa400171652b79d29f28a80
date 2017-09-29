@@ -1,0 +1,21 @@
+package fr.cpe.jms.producer;
+
+import javax.ejb.Stateless;
+
+@Stateless
+
+public class HelloJmsProducer implements IHelloJmsProducer{
+	
+	@Resource(name="java:/projet-hello")
+	private Queue queue;
+	
+	@Inject
+	@JmsConnectionFactory(value = "java:comp/DefaultJMSConnectionFactory")
+	private JmsContext context;
+	
+	@Override
+	public String saysayHello(String name)
+	{
+		return null;
+	}
+}

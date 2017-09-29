@@ -1,0 +1,13 @@
+package fr.cpe;
+import javax.ejb.Stateless;
+
+import fr.cpe.IAdd;
+@Stateless
+
+public class Add implements IAdd{
+	public String add(String nombres){
+		
+		return "result" +(name == null ||name.length()<=0 ? "world": name);
+		
+		}
+}

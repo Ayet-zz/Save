@@ -1,0 +1,13 @@
+import java.util.logging.Logger;
+
+@Path("/hello")
+public interface HelloRestService2 {
+
+	Logger logger = Logger.getLogger(HelloRestService2.class.getName());
+	@EJB
+	Hello helloService;
+	public String Hello2(){
+		logger.info(">>>> hello()");
+		return helloservice.sayhello();
+	}
+}

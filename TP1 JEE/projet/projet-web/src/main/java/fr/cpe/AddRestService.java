@@ -1,0 +1,29 @@
+package fr.cpe;
+
+
+import java.util.List;
+
+import javax.inject.Inject;
+
+import org.jboss.logging.Logger;
+
+
+
+
+public class AddRestService implements IAddRestService{
+
+	Logger logger = Logger.getLogger(AddRestService.class.getName());
+	
+	
+	@Inject
+	private IAdd addService;
+	
+	  
+	@Override
+	
+	public String add(List<Double> nombres){
+	
+		logger.info(">>>> add");
+		return addService.add(nombres);
+	}
+}

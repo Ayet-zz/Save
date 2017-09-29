@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
+<fullyQualifiedTypeName name="javax.ws.rs.QueryParam"/>
+<fullyQualifiedTypeName name="javax.ejb.Local"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="org.jboss.logging.Logger"/>
+<fullyQualifiedTypeName name="javax.jms.JMSException"/>
+<fullyQualifiedTypeName name="javax.jms.Message"/>
+<fullyQualifiedTypeName name="javax.jms.MessageListener"/>
+<fullyQualifiedTypeName name="fr.cpe.jms.consumer.HelloJmsConsumer"/>
+<fullyQualifiedTypeName name="fr.cpe.jms.producer.IHelloJmsProducer"/>
+</qualifiedTypeNameHistroy>

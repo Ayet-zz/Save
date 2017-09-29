@@ -1,0 +1,6 @@
+import javax.ejb.Stateless;
+
+@Stateless
+public interface Hello2 {
+	String sayHello();
+}

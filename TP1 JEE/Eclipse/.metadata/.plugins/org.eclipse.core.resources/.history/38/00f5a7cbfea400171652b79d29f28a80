@@ -1,0 +1,28 @@
+package fr.cpe;
+
+
+import javax.inject.Inject;
+
+import org.jboss.logging.Logger;
+
+
+
+
+public class HelloRestService2 implements HelloRestService{
+
+	Logger logger = Logger.getLogger(HelloRestService2.class.getName());
+	
+	
+	@Inject
+	private Hello helloService;
+	
+	@Inject
+	private HelloJmsProducer helloJmsProducerService;
+	@Override
+	
+	public String hello(String name){
+	
+		logger.info(">>>> Hello");
+		return helloService.sayHello(name);
+	}
+}

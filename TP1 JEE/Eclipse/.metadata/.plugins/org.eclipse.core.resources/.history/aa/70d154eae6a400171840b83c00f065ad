@@ -1,0 +1,20 @@
+package fr.cpe;
+import java.util.logging.Logger;
+
+import javax.inject.Inject;
+
+import fr.cpe.Hello;
+import fr.cpe.HelloRestService;
+
+@Path("/hello")
+public class HelloRestService2 implements HelloRestService{
+
+	Logger logger = Logger.getLogger(HelloRestService2.class.getName());
+	
+	@Inject
+	Hello helloService;
+	public String hello(){
+		logger.info(">>>> hello()");
+		return helloService.sayHello();
+	}
+}

@@ -1,0 +1,20 @@
+package fr.cpe;
+import java.util.List;
+
+import javax.ejb.Stateless;
+
+import fr.cpe.IAdd;
+@Stateless
+
+public class Add implements IAdd{
+	public String add(List<Double> nombres){
+		double resultat=0;
+		for(int i=0;i<nombres.length;i++)
+		{
+			resultat+=resultat;
+		}
+
+		return "result : " +(nombres == null ||nombres.length<=0 ? "world": resultat);
+		
+		}
+}

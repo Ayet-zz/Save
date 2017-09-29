@@ -1,0 +1,19 @@
+package fr.cpe.jms.consumer
+;
+
+public class HelloJmsProducer3 implements IHelloJmsProducer{
+	
+	@Resource(name="java:/projet-hello")
+	private Queue queue;
+	
+	@Inject
+	private JMSContext context;
+	
+	@Override
+	public String sayHello(String name)
+	{
+		context.createProducer()
+		.send(queue,name);
+		return null;
+	}
+}
