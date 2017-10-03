@@ -1,6 +1,6 @@
 {
 	"port":1337,
-	"contentDirectory" : "Desktop/TP/TPProjetNodeJS/tp/uploads/",
-	"presentationDirectory" : "Desktop/TP/TPProjetNodeJS/tp/presentation_content"
+	"contentDirectory" : "/home/ubuntu/Desktop/TP/TPProjetNodeJS/tp/uploads/",
+	"presentationDirectory" : "/home/ubuntu/Desktop/TP/TPProjetNodeJS/tp/presentation_content"
 
 }
